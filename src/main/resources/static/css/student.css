@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f8f5 0%, #d4efdf 100%);
+    margin: 0;
+    padding: 0;
+    color: #2e7d32;
+    transition: background 0.5s;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 48px;
+    color: #43a047;
+    text-align: center;
+    margin: 32px 0 24px 0;
+    padding: 16px;
+    background: linear-gradient(90deg, #e9f7ef 0%, #d0f5e8 100%);
+    border: 2px solid #a5d6a7;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(46, 125, 50, 0.15);
+    text-shadow: 2px 2px 6px rgba(46, 125, 50, 0.12);
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+h2:hover {
+    box-shadow: 0 10px 24px rgba(46, 125, 50, 0.22);
+    background: linear-gradient(90deg, #d0f5e8 0%, #e9f7ef 100%);
+}
+
+table {
+    width: 85%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.10);
+    transition: box-shadow 0.3s;
+}
+
+table:hover {
+    box-shadow: 0 8px 32px rgba(46, 125, 50, 0.18);
+}
+
+thead {
+    background: linear-gradient(90deg, #a5d6a7 0%, #66bb6a 100%);
+    color: #fff;
+}
+
+th, td {
+    padding: 16px 20px;
+    border: none;
+    text-align: left;
+    transition: background 0.3s, color 0.3s;
+}
+
+th {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e9f7ef;
+}
+
+tbody tr:hover {
+    background: linear-gradient(90deg, #d0f5e8 0%, #e9f7ef 100%);
+    color: #43a047;
+}
+
+td {
+    font-size: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.action-buttons button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(90deg, #43a047 0%, #66bb6a 100%);
+    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.10);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.action-buttons .edit {
+    background: linear-gradient(90deg, #388e3c 0%, #43a047 100%);
+}
+
+.action-buttons .delete {
+    background: linear-gradient(90deg, #e57373 0%, #81c784 100%);
+}
+
+.action-buttons button:hover {
+    opacity: 0.95;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.18);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 17px;
+    color: #fff;
+    background: linear-gradient(90deg, #66bb6a 0%, #43a047 100%);
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 2px solid #43a047;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    text-align: center;
+    margin: 24px 0;
+    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.10);
+}
+
+a:hover {
+    background: linear-gradient(90deg, #43a047 0%, #66bb6a 100%);
+    color: #e8f8f5;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.18);
+}
+
+form {
+    width: 55%;
+    margin: 32px auto;
+    background: #fff;
+    padding: 28px;
+    border: 1px solid #a5d6a7;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.10);
+    transition: box-shadow 0.3s;
+}
+
+form:hover {
+    box-shadow: 0 8px 32px rgba(46, 125, 50, 0.18);
+}
+
+input[type="text"], input[type="submit"], input[type="radio"] {
+    margin-bottom: 14px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #a5d6a7;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border: 1.5px solid #43a047;
+    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.10);
+}
+
+input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    background: linear-gradient(90deg, #66bb6a 0%, #43a047 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #43a047 0%, #66bb6a 100%);
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.18);
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #d0f5e8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a5d6a7;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #66bb6a;
+}
