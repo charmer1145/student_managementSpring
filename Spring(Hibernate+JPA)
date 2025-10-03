@@ -1,5 +1,7 @@
 Let's break down the inner workings of Spring Boot JPA, explaining the magic behind how it maps objects and automatically handles database operations without you having to write the DAO implementation. The key is understanding the roles of several core components and how they work together.
 
+EXPLANATION:
+
 The stack of technologies:
 You are using a layered approach to data access. Instead of just one technology, you're leveraging a combination of three major ones:
 JPA (Java Persistence API): This is the lowest level and the foundation. It's a specification, a set of rules and annotations (@Entity, @Id, etc.) for how to define object-relational mapping (ORM) and interact with databases. It doesn't provide any code to run things.
